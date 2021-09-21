@@ -3,7 +3,7 @@ FROM centos
 MAINTAINER rns@rnstech.com
 
 #RUN yum update -y
-RUN yum -y install java
+RUN yum install java-1.8.0-openjdk-devel.x86_64 -y
 RUN java -version
 RUN yum install wget -y
 
